@@ -126,6 +126,6 @@ IndependentDataSet <-    sqldf("select Subject, ActivityDescription,
                   from TidyDataSet
                   group by Subject, ActivityDescription")
 ## Create a file with the new tidy dataset
-write.table(IndependentDataSet,"TidyDataSet1.txt")
+write.table(IndependentDataSet,"TidyDataSet.txt",row.names = FALSE)
 
 
